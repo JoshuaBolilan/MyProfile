@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Education from './components/Education'; 
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,10 +28,14 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
+            
           </Routes>
         </div>
+        <Footer />
       </div>
+      
     </Router>
+    
   );
 }
 
@@ -101,5 +106,6 @@ const NavLinkWithHover = ({ to, children }) => {
     </Link>
   );
 };
+
 
 export default App;
