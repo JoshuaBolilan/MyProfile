@@ -15,7 +15,7 @@ const footerStyle = {
 const Footer = () => {
   return (
     <footer style={footerStyle}>
-      © {new Date().getFullYear()} Your Name. All rights reserved.
+      © {new Date().getFullYear()} JoshuaBolilan. All rights reserved.
     </footer>
   );
 };
