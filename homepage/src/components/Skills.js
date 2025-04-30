@@ -4,13 +4,11 @@ const Skills = () => {
   return (
  
     <div style={cardStyle}>
-      <h1>My Skills</h1>
+      <h1>My project</h1>
       <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>HTML & CSS</li>
-        <li>Problem Solving</li>
-        <li>Collaboration</li>
+        <li>web base ecommerce</li>
+        <li>calculator</li>
+        <li>tour to cabuyao</li>
       </ul>
     </div>
   );

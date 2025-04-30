@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Skills from './Skills';
-import Contact from './Contact';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Education from './components/Education'; // Add this line to import Education component
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <ul style={navListStyle}>
             <li style={navItemStyle}><NavLinkWithHover to="/">Home</NavLinkWithHover></li>
             <li style={navItemStyle}><NavLinkWithHover to="/about">About</NavLinkWithHover></li>
-            <li style={navItemStyle}><NavLinkWithHover to="/skills">Skills</NavLinkWithHover></li>
+            <li style={navItemStyle}><NavLinkWithHover to="/education">Education</NavLinkWithHover></li>
+            <li style={navItemStyle}><NavLinkWithHover to="/skills">Project</NavLinkWithHover></li>
             <li style={navItemStyle}><NavLinkWithHover to="/contact">Contact</NavLinkWithHover></li>
           </ul>
         </nav>
@@ -22,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/education" element={<Education />} /> {/* Route for Education */}
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
@@ -38,7 +41,6 @@ const appStyle = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-
 };
 
 const navStyle = {
