@@ -4,7 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-import Education from './components/Education'; // Add this line to import Education component
+import Education from './components/Education'; 
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/education" element={<Education />} /> {/* Route for Education */}
+            <Route path="/education" element={<Education />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
@@ -35,7 +35,7 @@ function App() {
 }
 
 const appStyle = {
-  backgroundColor: '#e6f2e6',
+  backgroundColor: '#e6f2ff', // Light blue background
   minHeight: '100vh',
   padding: '2rem',
   display: 'flex',
@@ -44,7 +44,7 @@ const appStyle = {
 };
 
 const navStyle = {
-  backgroundColor: '#ffffff',
+  backgroundColor: '#007bff', // Blue background for navbar
   borderRadius: '8px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   padding: '1rem',
@@ -68,7 +68,7 @@ const navItemStyle = {
 
 const navLinkStyle = {
   textDecoration: 'none',
-  color: '#007bff',
+  color: '#ffffff', // White text for links
   fontSize: '1.2rem',
   transition: 'color 0.3s ease',
 };
@@ -85,7 +85,7 @@ const contentStyle = {
 
 const navLinkHoverStyle = {
   ...navLinkStyle,
-  color: '#0056b3',
+  color: '#0056b3', // Darker blue on hover
 };
 
 const NavLinkWithHover = ({ to, children }) => {
